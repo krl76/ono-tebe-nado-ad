@@ -31,46 +31,47 @@
           alt="Логотип проекта Оно тебе надо"
         />
       </a>
-      <address class="address header__address">
-        <a href="tel:+99995555555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <address class="header__address address">
+        <a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </header>
 
     <main>
-      <section class="cover">
-        <div class="overlay"></div>
-        <h1 class="cover__title">
-          <span class="aligned-text">
-            о<span class="letter-spacing-extended">н</span>о
+      <!-- ... Содержимое main остается без изменений ... -->
+      <section class="promo-screen">
+        <div class="blackout-overlay"></div>
+        <h1 class="promo-screen__title">
+          <span class="promo-screen__title-line">
+            о<span class="wide-spacing">н</span>о
           </span>
-          <span class="aligned-text aligned-text_center">
-            те<span class="letter-spacing-extended">б</span>е
+          <span class="promo-screen__title-line promo-screen__title-line_centered">
+            те<span class="wide-spacing">б</span>е
           </span>
-          <span class="aligned-text aligned-text_right">
-            <span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span>
+          <span class="promo-screen__title-line promo-screen__title-line_right">
+            <span class="wide-spacing">н</span>ад<span class="normal-spacing">о</span>
           </span>
         </h1>
-        <div class="cover__description">
-          <p class="cover__description-text">
+        <div class="promo-screen__footer">
+          <p class="promo-screen__subtitle">
             Аукцион вещей, в которые никто не верил
           </p>
-          <button class="bet-button">Сделать ставку</button>
+          <button class="action-button">Сделать ставку</button>
         </div>
       </section>
 
-      <section class="lots" id="lots">
-        <h2 class="lots__heading">Лоты</h2>
-        <ul class="lots__card-list">
-          <li class="lots__card-list-item">
-            <a href="#" class="card-link">
-              <article class="card card_type_film">
-                <div class="overlay"></div>
-                <h3 class="card__title">
+      <section class="auction-items" id="lots">
+        <h2 class="auction-items__title">Лоты</h2>
+        <ul class="auction-items__list">
+          <li class="auction-items__item">
+            <a href="#" class="item-card-link">
+              <article class="item-card item-card_theme_movie">
+                <div class="blackout-overlay"></div>
+                <h3 class="item-card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <p class="card__text">
+                <p class="item-card__description">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -78,14 +79,14 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
-            <a href="#" class="card-link">
-              <article class="card card_type_book">
-                <div class="overlay"></div>
-                <h3 class="card__title">
+          <li class="auction-items__item">
+            <a href="#" class="item-card-link">
+              <article class="item-card item-card_theme_book">
+                <div class="blackout-overlay"></div>
+                <h3 class="item-card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p class="card__text">
+                <p class="item-card__description">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы...
@@ -93,14 +94,14 @@
               </article>
             </a>
           </li>
-          <li class="lots__card-list-item">
-            <a href="#" class="card-link">
-              <article class="card card_type_picture">
-                <div class="overlay"></div>
-                <h3 class="card__title">
+          <li class="auction-items__item">
+            <a href="#" class="item-card-link">
+              <article class="item-card item-card_theme_art">
+                <div class="blackout-overlay"></div>
+                <h3 class="item-card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p class="card__text">
+                <p class="item-card__description">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков...
@@ -109,22 +110,22 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="lots__look-more-link">посмотреть больше</a>
+        <a href="#" class="auction-items__more-link">посмотреть больше</a>
       </section>
 
-      <section class="about" id="about">
-        <div class="about__column about__logo-column">
-            <div class="about__logo">
+      <section class="about-section" id="about">
+        <div class="about-section__logo-wrapper">
+            <div class="about-section__logo-circle">
                 <img
-                class="about__logo-image"
+                class="about-section__logo"
                 src="./images/logo-white.svg"
                 alt="Белый логотип проекта Оно тебе надо на черном фоне"
                 />
             </div>
         </div>
-        <div class="about__column about__text-column">
-          <h2 class="about__title">Об аукционе</h2>
-          <div class="about__text">
+        <div class="about-section__content">
+          <h2 class="about-section__title">Об аукционе</h2>
+          <div class="about-section__text-block">
             <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
@@ -147,9 +148,9 @@
     </main>
 
     <footer class="footer">
-      <address class="address">
-        <a href="tel:+99995555555">+9 999 555 5555</a>
-        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+      <address class="footer__address address">
+        <a href="tel:+99995555555" class="address__link">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge" class="address__link">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav class="footer__menu">
